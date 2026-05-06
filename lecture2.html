@@ -32,10 +32,33 @@
             //STRING SLICING
 
             let details = "My name Is Fimihan Aberuagba.  I am a student of Babcock University";
-            alert(details);
+            // alert(details);
 
             //THE SLICE METHOD
-            alert(details.slice(0,10)); //RETURNS CHARACTERS FROM POSITION 0 TO POSITION 10; EXCLUDING POSITION 10
+            // alert(details.slice(0,10)); //RETURNS CHARACTERS FROM POSITION 0 TO POSITION 10; EXCLUDING POSITION 10
+            // alert(details.slice(1, 13)); //RETURNS CHARACTERS FROM POSITION 1 TO POSITION 13; EXCLUDING POSITION 13
 
+            let r2 = details.slice(3,16); //RETURNS CHARACTERS FROM POSITION 3 TO POSITION 16; EXCLUDING POSITION 16
+            // alert(r2);
+            
+            let r3 = details.slice(11, 26); //RETURNS CHARACTERS FROM POSITION 11 TO POSITION 26; EXCLUDING POSITION 26
+            // alert(r3);
+
+            alert(details.slice(28,42)); 
+            let r4 = details.slice(11); ////RETURNS CHARACTERS FROM POSITION 11 TO THE END 
+            // alert(r4);
+           
+            //THE SLICE FUNCTION CAN TAKE NEGATIVE VALUES
+
+            let r5 = details.slice(-36, -11);
+            //alert(r5);
+
+            let r6c= details.slice(-18);
+            // alert(r6);
+
+            //SUBSTRING - DIFFERENCE IS THAT IT DOESN'T TAKE NEGATIVE VALUES
+
+            let r7 = details.substring(17); //RETURNS CHARACTERS FROM POSITION 17 TILL THE END6
+            // alert(r7);
         </script>
     </body>
