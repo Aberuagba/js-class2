@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        let carList = ["Honda", "Mercedes", "Toyota", "Nissan", "Volkswagen", "BMW"]
+        // alert(carList)
+        // alert(typeof(carList))
+        // alert("Element in position 0: " + carList[0])
+        // alert("Element in position 1: " + carList[1])
+        // alert("Element in position 2: " + carList[2])
+        // alert("Element in position 4: " + carList[4])
+
+        // alert(carList.length) //TO KNOW THE NUMBER Of ELEMENTS/ITEMS/VALUES IN AN ARRAY
+        // alert("The carList array has " +_carList.length + " Elements")
+
+        // ARRAY FUNCTIONS
+        // TO ADD NEW ELEMENTS AT THE END OF AN ARRAY
+
+        carList.push("Ford", "Lexus")
+        // alert(carList)
+        
+        //TO ADD NEW ITEMS AT THE START OF AN ARRAY
+          carList.unshift("Cheverolet", "Innoson")
+        //alert(carList)
+        // alert("Element in position 2: " + carList[2])
+
+        carList[2] = "Nord"
+        // alert("Element in position 2: " + carList[2])
+        // alert(carList)
+      
+        // DELETING ITEMS IN AN ARRAY 
+        alert(carList)
+        carList.pop() //DELETES THE LAST ELEMENT IN THE ARRAY
+        alert(carList)
+        carList.shift() // DELETES THE FIRST ELEMENT IN THE ARRAY
+        alert(carList)
+
+        // TO KNOW WHETHER AN ELEMENT IS PRESENT IN AN ARRAY OR NOT
+        alert("Do we have Mercedes in CarList? " + carList.includes("Mercedes"))
+        alert("Do we have Kia in CarList? " + carList.including("Kia"))
+        
+    </script>
+</body>
+</html>
