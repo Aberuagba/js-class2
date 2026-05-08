@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>JS Class</title>
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+            
+            // window.alert("Hello World!!!");
+            // alert('Welcome to our JS Class');
+            // alert("JS is a browser-based programming language");
+            // alert("It is the world's most popular programming language of the web");
+
+            // alert("Hello");
+            // alert("My name is Aberuagba Oluwafimihan");
+            // alert('I am a student of Babcock Unversity');
+            // alert('I am from Lagos State');
+            // alert('I live in Leicester');
+            // alert('I am dark in complexion');
+            // alert("I love jollof Rice and Plantain");
+            // alert("I love travelling");
+            // alert("I love reading");
+
+
+            //MANIPULATING SINGLE AND DOUBLE QUOTES
+
+            // alert("Joseph said \"Good Morning\"");
+            // alert('Biola said "How are you"?');
+            // alert('It\'s a new day');
+            // alert("She's a good girl");
+            
+            //OUTPUTING NUMERIC VALUES
+
+            // alert(24);
+            // alert(625.2981);
+            // alert(16 + 10);
+            // alert(12 * 3);
+            // alert(20 / 4);
+            // alert ( 10 - 6);
+            // alert(30 % 8);
+
+            // prompt("What is your name?");
+            // prompt("How old are you?");
+            // prompt("Where do you stay?");
+
+              
+            //   JAVASCRIPT VARIABLES
+
+            // STRING VARIABLES
+             let fn = "Aberuagba";
+             let ln = "Oluwafimihan";
+             let state = 'Ogun State';
+             let author = "Chinua Achebe";
+             let book = 'Things Fall Apart';
+
+            //  TO KNOW THE DATA TYPE OF A VARIABLE
+                // alert(typeof(fn));
+                // alert(typeof(ln));
+                // alert(typeof(state));
+
+
+                // alert(fn);
+                // alert(ln);
+                // alert(state);
+
+                // alert(author);
+                // alert(book);
+
+
+                // VARIABLES AND STRINGS CONCATENATION
+
+                // alert(fn + ln);
+                // alert(fn + ' ' + ln);
+                // alert("My name is " + fn);
+                // alert("My name is " + fn + " " + ln);
+
+                // alert('I am from ' + state);
+                // alert("My name is " + fn + " " + ln + ".  I am from " + state);
+                // alert("The book " + book + " was written by " + author);
+
+                // let fname = prompt("Tell us your first name: ");
+                // let lname = prompt("Tell us your last name: ");
+                // let address = prompt("Where do you stay?"); 
+
+                // alert("Your name is " + fname + " " + lname);
+                // alert("You stay in " + address);
+
+                // let bk = prompt("Enter a Book Title: ");
+                // let writer = prompt("Enter Book Author: ");
+
+                // alert("Your book is " + bk + " was written by " + writer);
+
+                // NUMBER VARIABLES
+
+                //DECLARING MULTIPLE VARAIABLES AT A TIME
+                let num1, num2, num3, sum, product;
+                num1 = 24;
+                num2 = 5;
+                num3 = 12;
+
+                sum = (num1 + num2 + num3);
+                product = (num1 * num2 * num3);
+
+                // alert("The value of num1 variable is " + num1);
+                // alert("The value of num2 variable is " + num2);
+                // alert("The value of num3 variable is " + num3);   
+                
+                // alert("The sum of " + num1 + "," + num2 + " and " + num3 + " is " + sum);
+                // alert("The product of " + num1 + "," + num2 + " and " + num3 + " is " + product);
+
+                // let n1 = Number(prompt("Enter first number: "));
+                // let n2 = Number(prompt("Enter second number: "));
+                // let n3 = Number(prompt("Enter third number: "));
+
+                // alert("The data type of first number you entered is " + typeof(n1));
+                // alert("The data type of second number you entered is " + typeof(n2));
+                // alert("The data type of third number you entered is " + typeof(n3));
+
+                // let addition = (n1 + n2 + n3);
+                // let multiplication = (n1 * n2 * n3);
+
+                // alert("The sum of " + n1 + "," + n2 + " and " + n3 + " is " + addition);
+                // alert("The product of " + n1 + "," + n2 + " and " + n3 + " is " + multiplication);
+                
+                let qty = Number(prompt("Enter Quantity: "));
+                let price = Number(prompt("Enter Price: "));
+                let tax = Number(prompt("Enter Tax(in %): "));
+
+                let amount = (qty * price);
+                let total =  (((tax/100) * amount) + amount);
+
+                alert("The price of " + qty + "pairs of shoes at N" + price + " each is " + amount);
+                alert("With " + tax + "% tax, total price becomes N" + total);
+
+        </script>
+    </body>
+
+</html>    
