@@ -27,3 +27,104 @@ while(k <= 20) {
 
     k++
 }
+
+
+
+
+//JS PROGRAM TO DISPLAY EVEN NUMBERS BETWEEN 1 AND 30
+
+let m = 1;
+while (m <= 30) {
+    
+    if ((m % 2) == 0) {
+        console.log(m);
+    }
+    
+    m++;
+}
+
+//JS PROGRAM TO DISPLAY MULTIPLES OF 3 BETWEEN 10 AND 50 USING FOR LOOP
+
+for (let c = 10; c <= 50; c++) {
+    if ((c % 3) === 0) {
+        console.log(c);
+    }
+}
+
+//JS PROGRAM TO DISPLAY MULTIPLES OF 5 BETWEEN 100 AND 200 USING WHILE LOOP
+
+let a = 100;
+
+while (a <= 200) {
+    if ((a % 5) === 0) {
+        console.log(a);
+    }
+    
+    a++;
+}
+
+//JS PROGRAM TO DISPLAY THE FACTORS OF 30 USING FOR LOOP
+for (let z = 1; z <= 30; z++) {
+    
+    if ((30 % z) === 0) {
+        console.log(z);
+    }
+}
+
+//JS PROGRAM TO DISPLAY THE FACTORS OF 50 USING WHILE LOOP
+let n = 1;
+
+while (n <= 50) {
+    if ((50 % n) === 0) {
+        console.log(n);
+    }
+    n++;
+}
+
+//JS PROGRAM TO DISPLAY THE MULTIPLICATION TABLE OF 10
+
+for (let i = 1; i <= 12; i++) {
+    console.log(10 + " * " + i + " = " + 10 * i);
+}
+
+//JS PROGRAM THAT DISPLAYS THE RANGE OF NUMBERS BETWEEN 2 INTEGERS
+let num1 = 75, num2 = 100;
+
+while (num1 <= num2) {
+    console.log(num1);
+    num1++;
+}
+
+//JS PROGRAM THAT SUMS AND DISPLAYS THE RANGE OF NUMBERS BETWEEN 2 INTEGERS
+
+let n1 = 15, n2 = 40, sum = 0;
+for (let i = n1; i <= n2; i++) {
+    sum += i;
+}
+alert("The sum of numbers between " + n1 + " and " + n2 + " is " + sum);
+
+//JS PROGRAM THAT PROMPTS THE USER TO ENTER A NUMBER AND THEN 
+//DISPLAYS THE FACTORS OF THE NUMBER
+
+let u = parseInt(prompt("Enter a number: "));
+console.log("The factors of " + u + " are as follows.....");
+
+for (let i = 1; i <= u; i++) {
+    if ((u % i) === 0) {
+        console.log(i);
+    }
+}
+
+//JS PROGRAM THAT PROMPTS THE USER TO ENTER A NUMBER AND THEN DISPLAYS
+//THE MULTIPLICATION TABLE OF THE NUMBER
+
+let y = parseInt(prompt("Enter a number: "));
+
+console.log("Below is the multiplication table of " + y);
+
+let j = 1;
+
+while (j <= 12) {
+    console.log(y + " x " + j + " = " + y * j);
+    j++;
+}
