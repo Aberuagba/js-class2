@@ -1,0 +1,65 @@
+//FUNCTION DECLARATION/DEFINITION
+// function hello() {
+//     alert("Hello!!!")
+//     alert("Welcome to our JS Class")
+//     alert("Yoou will surely enjoy it")
+// }
+
+// FUNCTION CALL
+// hello()
+
+function addition() {
+    let a = 3, b = 10, c = 24
+    let sum = (a + b + c)
+    alert("The sum of " + a + ", " + b + " and " + c + " is " + sum)
+}
+
+// addition()
+
+function multiply() {
+    let x = 10, y = 15, z = 24
+    let product = (x * y * z)
+    alert("The product of " + x + ", " + y + " and " + z + " is " + product)
+}
+// multiply()
+
+function greeting(name) {
+    alert("Hello, @" + name)
+    alert("It's nice to have you here")
+}
+
+
+// greeting("Lizzy")
+//WE CAN PASS A VARIABLE AS AN ARGUEMENT INTO A FUNCTION
+// let name = prompt("What is your name? ")
+// greeting(name)
+
+function welcome(name, gender) {
+        if(gender === "Male" || gender === "male") {
+            alert("Hello Sir, @" + name)
+            alert("It's nice to have you here")
+        } else if(gender === "Female" || gender === "female") {
+            alert("Hello Ma, @" + name)
+            alert("It's nice to have you here")
+        } else {
+            alert("Hello, It's nice to have you here")
+        }
+}
+
+    // let nm = prompt("What is your name? ")
+    // let sex =prompt("Are you Male or Female?")
+
+    // welcome(nm, sex)
+
+function add(a,b,c) {
+    let sum = (a + b + c)
+    alert("The sum of " + a + ", " + b + " and " + c + " is " + sum)
+}
+
+// add(16, 10, 24)
+// add(50, 50, 50)
+
+let num1 = Number(prompt("Enter first number"))
+let num2 = Number(prompt("Enter second number"))
+let num3 = Number(prompt("Enter third number"))
+add(num1, num2, num3)
