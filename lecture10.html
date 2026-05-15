@@ -63,3 +63,37 @@ let num1 = Number(prompt("Enter first number"))
 let num2 = Number(prompt("Enter second number"))
 let num3 = Number(prompt("Enter third number"))
 add(num1, num2, num3)
+
+function sumProduct(){
+    let x = Number(prompt("Enter first number"))
+    let y = Number(prompt("Enter second number"))
+    let z = Number(prompt("Enter third number"))
+
+    let sum = (x + y + z)
+    let product = (x * y * z)
+    
+    alert("The sum of " + x + ", " + y + " and " + z + " is " + sum)
+    alert("The product of " + x + ", " + y + " and " + z + " is " + product)
+}
+
+//sumProduct()
+
+//FUNCTIONS THAT TAKE DEFAULT PARAMETERS
+
+function commerce(qty, price, tax = 7.5) {
+    let amount = (qty * price)
+    let taxValue = ((tax/100) * amount)
+    let total = (amount + taxValue)
+
+    alert(qty + " pairs of shoe at N" + price.toFixed(2) + " each is N" + amount.toFixed(2))
+    alert("You are to pay " + tax + "% as tax which is now N" + taxValue.toFixed(2))
+    alert("The total amount is now N" + total.toFixed(2))
+}
+
+// commerce(7, 3800, 4.5)
+// commerce(15, 1600)
+
+    let a1 = Number(prompt("Enter Quantity: "))
+    let a2 = Number(prompt("Enter Price per Quantity: "))
+
+commerce(a1,a2)
