@@ -97,3 +97,60 @@ function commerce(qty, price, tax = 7.5) {
     let a2 = Number(prompt("Enter Price per Quantity: "))
 
 commerce(a1,a2)
+
+//JS FUNCTION THAT PROMPTS THE USER TO ENTER THE RADIUS OF A CIRCLE AND 
+//THEN DISPLAYS THE CIRCUMFERENCE AND AREA OF THE CIRCLE
+
+function circle(pi = 3.142) {
+   let r = Number(prompt("Enter radius of circle: "))
+   let cir = (2 * pi * r)
+   let area = (pi * r * r)
+   alert("The circumference of a circle of radius " + r + "cm is " + cir.toFixed(2) + "cm")
+   alert("The area of a circle of radius " + r + "cm is " + area.toFixed(2) + "cm square")
+}
+
+//circle()
+
+// JS FUNCTION THAT PROMPTS THE USER TO ENTER A NUMBER AND THEN DISPLAYS THE 
+// FACTORS OF THAT NUMBER
+
+function factors(){
+    let x = Number(prompt("Enter a number: "))
+    console.log("Below are the factors of " + x)
+
+
+    for(let i=1; i<=x; i++) {
+        if((x%i) === 0){
+            console.log(i)
+        }
+    }
+}
+//factors()
+
+//JS FUNCTION THAT PROMPT THE USER TO DISPLAY 
+//THE SQUARE OF THE NUMBER 
+
+function square(){
+    let number = prompt("Enter a number: ");
+    number = Number(number);
+
+    let square = number * number;
+    alert("The square of " + number + " is" + square);
+    
+}
+// square()
+
+// JS FUNCTION THAT PROMPTS THE USER TO ENTER A NUMBER AND THEN DISPLAYS
+// THE MULTIPLICATION TABLE OF THE NUMBER
+
+function table() {
+    let n = Number(prompt("Enter a number: "))
+    console.log("Multiplication Table of " + n)
+
+    let i = 1
+    while(i <= 12){
+        console.log(n + " * " + i + " = " + n*i)
+        i++
+    }
+}
+table()

@@ -1,0 +1,77 @@
+// JAVASCRIPT OBJECTS
+
+let movie = {
+    title:"Shazam",
+    producer: "Warner Bros",
+    director: "David S Sanberg",
+    releaseYear: 2019,
+    duration: "2hrs 12mins"
+}
+//console.log(movie)
+
+//ACCESSING THE PROPERTIES IN AN OBJECT: object_name.property_name
+
+// console.log(movie.title)
+// console.log(movie.director)
+// console.log(movie.duration)
+
+const patient = {
+    fname: "Tunde",
+    lname: "Badmus",
+    gender: "Male",
+    bloodGroup: "AA",
+    height: 5.5
+}
+//console.log(patient)
+//ADDING NEW PROPERTIES TO AN OBJECT
+patient.email = "t_badmus@gmail.com"
+patient.genotype = "O+"
+//console.log(patient)
+// console.log(patient.fname)
+// console.log(patient.genotype)
+// console.log(patient.email)
+
+const student = {
+    fn: "Helen",
+    ln: "Emabino",
+    gender: "Female",
+    age: 24,
+    score: {
+        English: "A1",
+        Mathematics: "C5",
+        Economics: "B2",
+        Accounting: "A1",
+        Commerce: "C4",    
+    },
+    stateOfOrigin: "Enugu",
+    complexion: "Light"
+}
+// console.log(student.score.English)
+// console.log(student.score.Mathematics)
+// console.log(student.fn)
+// console.log(student.stateOfOrigin)
+
+const employee = {
+    fname: "Abiola",
+    lname: "Oliseh",
+    salary: 5000,
+    commission: 850,
+    degrees:{
+        BSC: "OAU",
+        MSC: "Unilag",
+        PHD: "MIT"
+    },
+    fullname: function() {
+        return this.fname + " " + this.lname
+    },
+    monthlySalary: function() {
+        return this.salary + this.commission
+    },
+    annualSalary: function() {
+        return ((this.salary + this.commission) *12)
+    }
+}
+console.log(employee.fullname())
+console.log(employee.monthlySalary())
+console.log(employee.annualSalary())
+
